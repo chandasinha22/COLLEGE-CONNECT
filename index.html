@@ -188,6 +188,49 @@
                 display: none; /* Hide on mobile */
             }
         }
+
+        /* Update hero section styles */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            max-width: 100%;
+            margin: 1rem 0 2rem;
+            padding: 0;
+            position: relative;
+            height: 85vh;
+        }
+
+        .hero-content {
+            flex: 0.7;
+            margin-left: 5%;
+            z-index: 2;
+        }
+
+        .hero-image {
+            width: 30%;
+            height: auto;
+            position: relative;
+            top: 1px;
+            left: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20rem;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 20px;
+            box-shadow: -8px 8px 24px rgba(240, 55, 165, 0.15);
+        }
+
+        .responsive-image {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -213,9 +256,17 @@
             </div>
         </div>
     </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Add content here later -->
+        </div>
+        <div class="hero-image">
+            <img src="https://img.freepik.com/free-vector/college-students-concept-illustration_114360-10205.jpg" 
+                 alt="College Connect Illustration">
+        </div>
+    </section>
 
-    <!-- Rest of your HTML content remains the same -->
-    <!-- (Keep all other sections from the previous version) -->
-
+    <!-- Rest of your HTML content -->
 </body>
 </html>
