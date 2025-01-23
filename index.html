@@ -138,8 +138,40 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
 
-        /* Your existing styles continue here... */
-        /* (Keep all the other styles from the previous version) */
+        /* Add new styles for nav links */
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #F037A5;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #F037A5;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
         @media (max-width: 768px) {
             .logo-icon {
@@ -150,6 +182,10 @@
 
             .logo-main {
                 font-size: 1.4rem;
+            }
+
+            .nav-links {
+                display: none; /* Hide on mobile */
             }
         }
     </style>
@@ -165,9 +201,15 @@
                     <span class="logo-main">College Connect</span>
                 </div>
             </a>
+            <div class="nav-links">
+                <a href="#about">About Us</a>
+                <a href="#clubs">Clubs & Societies</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact Us</a>
+            </div>
             <div class="nav-buttons">
-                <button class="sign-in">Sign In</button>
-                <button class="register">Register</button>
+                <button class="sign-in">Log In</button>
+                <button class="register">Sign Up</button>
             </div>
         </div>
     </nav>
