@@ -207,39 +207,13 @@
 
         .hero-content {
             flex: 0.6;
-            margin-left: 15%;
+            margin-left: 6%;
             z-index: 2;
             margin-top: -40px;
+            padding-left: 2rem;
+            padding-right: 1rem;
         }
 
-        .hero-image {
-            width: 35%;
-            height: auto;
-            position: relative;
-            top: -20px;
-            left: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 10rem;
-        }
-
-        .hero-image img {
-            width: 120%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 0;
-            box-shadow: none;
-        }
-
-        .responsive-image {
-            width: 95%;
-            height: auto;
-            float: right;
-            margin-left: 10px;
-        }
-
-        /* Update hero content styles */
         .hero-tagline {
             font-size: 3.8rem;
             font-weight: bold;
@@ -257,16 +231,39 @@
         }
 
         .hero-description {
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 1.6;
-            color: #444;
-            margin-bottom: 2.5rem;
-            max-width: 520px;
+            color: #666;
+            margin: 1.5rem 0;
             letter-spacing: 0;
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            margin-right: 10%;
-            text-align: right;
+        }
+
+        .hero-image {
+            flex: 0.4;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: 0;
+            margin-left: -9rem;
+        }
+
+        .hero-image img {
+            max-width: 120%;
+            width: 600px;
+            height: auto;
+            object-fit: contain;
+            transform: translateX(-40px);
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            float: right;
+            margin-left: 10px;
         }
 
         .start-exploring {
@@ -321,16 +318,15 @@
                 Community
             </h1>
             <p class="hero-description">
-                Explore College Connect to immerse yourself in campus activities,
-                discover clubs, and stay updated on events—right at your fingertips.
-                Our platform is designed to enhance your university experience,
+                Explore College Connect to immerse yourself in campus activities,<br>
+                join vibrant clubs, and connect with like-minded peers.<br>
+                Our platform is designed to enhance your university experience,<br>
                 making it simpler than ever to engage with your community.
             </p>
             <button class="start-exploring">Start Exploring</button>
         </div>
         <div class="hero-image">
-            <img src="https://img.freepik.com/free-vector/college-students-concept-illustration_114360-10205.jpg" 
-                 alt="College Connect Illustration" class="responsive-image">
+            <img src="https://img.freepik.com/free-vector/college-students-concept-illustration_114360-10205.jpg" alt="College students illustration">
         </div>
     </section>
 
